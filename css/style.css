@@ -56,25 +56,30 @@ body {
   width: 1170px;
 }
 
-header {
+.header {
+  position: fixed;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(/img/background_header.png);
-  height: 950px;
+  height: 64px;
+  width: 100%;
 }
 
-header .container_header {
+.header .container_header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 64px;
 }
 
-header .container_header .logo_wrapper {
+.header .container_header .logo_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,26 +88,35 @@ header .container_header .logo_wrapper {
           align-items: center;
 }
 
-header .container_header .logo_wrapper .logo,
-header .container_header .logo_wrapper .company_name {
+.header .container_header .logo_wrapper .logo,
+.header .container_header .logo_wrapper .company_name {
   max-height: 64px;
 }
 
-header .container_header nav {
+.header .container_header nav {
   border: 1px dashed violet;
 }
 
-header .container_header nav .link_wrapper {
+.header .container_header nav .link_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .container_header nav .link_wrapper li a {
-  /*font-family: IBM Plex Sans;*/
+.header .container_header nav .link_wrapper li {
+  margin-left: 50px;
+}
+
+.header .container_header nav .link_wrapper li a {
+  font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.dstar_iot {
+  background-image: url(/img/background_header.png);
+  height: 100vh;
 }

@@ -52,13 +52,16 @@ body {
     width: 1170px;
 }
 
-header {
+.header {
+    position: fixed;
+    top: 0;
     display: flex;
-    background-image: url(/img/background_header.png);
-    height: 950px;
+    height: 64px;
+    width: 100%;
     .container_header {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         height: 64px;
         .logo_wrapper {
             display: flex;
@@ -74,8 +77,9 @@ header {
             .link_wrapper {
                 display: flex;
                 li {
+                    margin-left: 50px;
                     a {
-                        /*font-family: IBM Plex Sans;*/
+                        font-family: IBM Plex Sans;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 16px;
@@ -86,4 +90,9 @@ header {
             }
         }
     }
+}
+
+.dstar_iot {
+    background-image: url(/img/background_header.png);
+    height: 100vh;
 }
