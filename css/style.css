@@ -50,20 +50,59 @@ body {
           flex-direction: column;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+}
+
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(/img/background_header.png);
+  height: 950px;
+}
+
+header .container_header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1170;
-  max-height: 64;
-  border: 1px solid black;
+  height: 64px;
 }
 
-header nav .link_wrapper {
+header .container_header .logo_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container_header .logo_wrapper .logo,
+header .container_header .logo_wrapper .company_name {
+  max-height: 64px;
+}
+
+header .container_header nav {
+  border: 1px dashed violet;
+}
+
+header .container_header nav .link_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container_header nav .link_wrapper li a {
+  /*font-family: IBM Plex Sans;*/
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
 }

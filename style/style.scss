@@ -19,6 +19,7 @@
 
 a {
     text-decoration: none;
+
     &:focus {
         outline: none;
     }
@@ -45,15 +46,44 @@ body {
     flex-direction: column;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
+
 header {
     display: flex;
-    align-items: center;
-    max-width: 1170;
-    max-height: 64;
-    border: 1px solid black;
-    nav {
-        .link_wrapper {
+    background-image: url(/img/background_header.png);
+    height: 950px;
+    .container_header {
+        display: flex;
+        align-items: center;
+        height: 64px;
+        .logo_wrapper {
             display: flex;
+            align-items: center;
+            .logo,
+            .company_name {
+                max-height: 64px;
+            }
+        }
+
+        nav {
+            border: 1px dashed violet;
+            .link_wrapper {
+                display: flex;
+                li {
+                    a {
+                        /*font-family: IBM Plex Sans;*/
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 16px;
+                        color: #ffffff;
+                    }
+                }
+            }
         }
     }
 }
