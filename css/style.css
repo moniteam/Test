@@ -371,6 +371,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
   height: 50vh;
 }
 
@@ -385,6 +387,9 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 370px;
+  height: 316px;
+  margin-right: 30px;
 }
 
 .aws_solution .container .aws_wrapper .aws_text .head_text h3 {
@@ -398,6 +403,7 @@ body {
       align-self: center;
   text-transform: uppercase;
   color: #00abca;
+  margin-bottom: 14px;
 }
 
 .aws_solution .container .aws_wrapper .aws_text .head_text h2 {
@@ -410,9 +416,10 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   text-transform: capitalize;
+  margin-bottom: 25px;
 }
 
-.aws_solution .container .aws_wrapper .aws_text .head_text .aws_text_content {
+.aws_solution .container .aws_wrapper .aws_text .aws_text_content {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -425,6 +432,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #f1f3f6;
+  border-radius: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .aws_solution .container .aws_wrapper .aws_list .list_col {
@@ -435,13 +447,46 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .aws_solution .container .aws_wrapper .aws_list .list_col .list_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
   color: #161616;
+}
+
+.aws_solution .container .aws_wrapper .aws_list .list_col .list_row::before {
+  content: " ";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00abca;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-image: url(..//img/icon/check_aws.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 39px;
+  margin-right: 20px;
 }

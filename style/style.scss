@@ -268,11 +268,15 @@ body {
     .container {
         .aws_wrapper {
             display: flex;
+            align-content: center;
             height: 50vh;
             .aws_text {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+                width: 370px;
+                height: 316px;
+                margin-right: 30px;
                 .head_text {
                     h3 {
                         font-family: IBM Plex Sans;
@@ -283,6 +287,7 @@ body {
                         align-self: center;
                         text-transform: uppercase;
                         color: #00abca;
+                        margin-bottom: 14px;
                     }
                     h2 {
                         font-family: IBM Plex Sans;
@@ -292,29 +297,52 @@ body {
                         line-height: 54px;
                         align-self: center;
                         text-transform: capitalize;
+                        margin-bottom: 25px;
                     }
-                    .aws_text_content {
-                        font-family: Open Sans;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 30px;
-                        color: #667886;
-                    }
+                }
+                .aws_text_content {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #667886;
                 }
             }
             .aws_list {
                 display: flex;
+                background: #f1f3f6;
+                border-radius: 15px;
+                flex-grow: 1;
                 .list_col {
                     display: flex;
                     flex-direction: column;
+                    justify-content: space-around;
+                    flex-grow: 1;
                     .list_row {
+                        display: flex;
+                        align-items: center;
                         font-family: IBM Plex Sans;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 18px;
                         line-height: 18px;
                         color: #161616;
+                        &::before {
+                            content: " ";
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #00abca;
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                            background-image: url(..//img/icon/check_aws.svg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            margin-left: 39px;
+                            margin-right: 20px;
+                        }
                     }
                 }
             }
