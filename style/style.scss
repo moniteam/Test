@@ -108,6 +108,10 @@ body {
     }
 }
 
+.blue_link {
+    color: #00abca;
+}
+
 .dstar_iot {
     background-image: url(..//img/background_header.png);
     height: 100vh;
@@ -145,6 +149,10 @@ body {
                     height: 54px;
                     background: #00abca;
                     border-radius: 5px;
+                    color: #ffffff;
+                    &:hover {
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+                    }
                 }
             }
         }
@@ -153,4 +161,53 @@ body {
 
 .how_it_works {
     height: 100vh;
+    background-image: url(..//img/2_section/background_map.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    .how_it_works_wrapper {
+        display: flex;
+        flex-direction: column;
+        .how_it_heading {
+            display: flex;
+            flex-direction: column;
+            a {
+                font-family: IBM Plex Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 16px;
+                align-self: center;
+                text-transform: uppercase;
+                color: #00abca;
+            }
+            h2 {
+                font-family: IBM Plex Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 42px;
+                line-height: 54px;
+                align-self: center;
+                text-transform: capitalize;
+            }
+            span {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 30px;
+                align-self: center;
+                color: #667886;
+            }
+        }
+        .how_it_content {
+            display: flex;
+            flex-direction: row;
+            .how_it_steps {
+
+            }
+            .mac {
+                
+            }
+        }
+    }
 }

@@ -133,6 +133,10 @@ body {
   margin-top: 8px;
 }
 
+.blue_link {
+  color: #00abca;
+}
+
 .dstar_iot {
   background-image: url(..//img/background_header.png);
   height: 100vh;
@@ -193,8 +197,84 @@ body {
   height: 54px;
   background: #00abca;
   border-radius: 5px;
+  color: #ffffff;
+}
+
+.dstar_iot .container .dstar_iot_wrapper .description button:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
 }
 
 .how_it_works {
   height: 100vh;
+  background-image: url(..//img/2_section/background_map.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.how_it_works .how_it_works_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_heading a {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+  color: #00abca;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_heading h2 {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 54px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: capitalize;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_heading span {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #667886;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
