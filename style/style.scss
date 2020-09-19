@@ -167,12 +167,12 @@ body {
     .how_it_works_wrapper {
         display: flex;
         flex-direction: column;
-        height: 768px;
+        height: 100vh;
         justify-content: space-around;
         .how_it_heading {
             display: flex;
             flex-direction: column;
-            a {
+            h3 {
                 font-family: IBM Plex Sans;
                 font-style: normal;
                 font-weight: 600;
@@ -210,17 +210,18 @@ body {
                     flex-direction: column;
                     justify-content: space-around;
                     height: 564px;
+                    max-width: 470px;
                     counter-reset: myCounter;
                     .step {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-
+                        margin-bottom: 35px;
                         font-family: IBM Plex Sans;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 18px;
-                        line-height: 24px;
+                        line-height: 26px;
                         color: #161616;
                         .step_4 {
                             flex-wrap: wrap;
@@ -246,11 +247,74 @@ body {
                             background-color: #ffffff;
                             border-radius: 5px;
                             box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
-                            &::before {
-                                content: '';
-                                border-left: 1px dotted #667886;
-                            }
                         }
+                        &::after {
+                            content: "";
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            .mac {
+                align-self: center;
+                width: 670px;
+                height: 360px;
+            }
+        }
+    }
+}
+
+.aws_solution {
+    .container {
+        .aws_wrapper {
+            display: flex;
+            height: 50vh;
+            .aws_text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .head_text {
+                    h3 {
+                        font-family: IBM Plex Sans;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 16px;
+                        align-self: center;
+                        text-transform: uppercase;
+                        color: #00abca;
+                    }
+                    h2 {
+                        font-family: IBM Plex Sans;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 42px;
+                        line-height: 54px;
+                        align-self: center;
+                        text-transform: capitalize;
+                    }
+                    .aws_text_content {
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: #667886;
+                    }
+                }
+            }
+            .aws_list {
+                display: flex;
+                .list_col {
+                    display: flex;
+                    flex-direction: column;
+                    .list_row {
+                        font-family: IBM Plex Sans;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #161616;
                     }
                 }
             }

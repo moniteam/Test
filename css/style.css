@@ -220,7 +220,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 768px;
+  height: 100vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -235,7 +235,7 @@ body {
           flex-direction: column;
 }
 
-.how_it_works .how_it_works_wrapper .how_it_heading a {
+.how_it_works .how_it_works_wrapper .how_it_heading h3 {
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 600;
@@ -293,6 +293,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 564px;
+  max-width: 470px;
   counter-reset: myCounter;
 }
 
@@ -307,11 +308,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 35px;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   color: #161616;
 }
 
@@ -350,7 +352,96 @@ body {
           box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
 }
 
-.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step::before::before {
-  content: '';
-  border-left: 1px dotted #667886;
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .mac {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 670px;
+  height: 360px;
+}
+
+.aws_solution .container .aws_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+}
+
+.aws_solution .container .aws_wrapper .aws_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.aws_solution .container .aws_wrapper .aws_text .head_text h3 {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+  color: #00abca;
+}
+
+.aws_solution .container .aws_wrapper .aws_text .head_text h2 {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 54px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: capitalize;
+}
+
+.aws_solution .container .aws_wrapper .aws_text .head_text .aws_text_content {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #667886;
+}
+
+.aws_solution .container .aws_wrapper .aws_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aws_solution .container .aws_wrapper .aws_list .list_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aws_solution .container .aws_wrapper .aws_list .list_col .list_row {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #161616;
 }
