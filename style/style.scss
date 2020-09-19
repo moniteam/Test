@@ -167,6 +167,8 @@ body {
     .how_it_works_wrapper {
         display: flex;
         flex-direction: column;
+        height: 768px;
+        justify-content: space-around;
         .how_it_heading {
             display: flex;
             flex-direction: column;
@@ -203,10 +205,54 @@ body {
             display: flex;
             flex-direction: row;
             .how_it_steps {
+                .steps {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 564px;
+                    counter-reset: myCounter;
+                    .step {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
 
-            }
-            .mac {
-                
+                        font-family: IBM Plex Sans;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #161616;
+                        .step_4 {
+                            flex-wrap: wrap;
+                        }
+                        &::before {
+                            counter-increment: myCounter;
+                            content: counter(myCounter);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 24px;
+                            font-family: IBM Plex Sans;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 24px;
+                            text-align: center;
+                            color: #667886;
+                            min-height: 35px;
+                            min-width: 35px;
+                            max-width: 35px;
+                            max-height: 35px;
+                            background-color: #ffffff;
+                            border-radius: 5px;
+                            box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+                            &::before {
+                                content: '';
+                                border-left: 1px dotted #667886;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

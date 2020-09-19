@@ -220,6 +220,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 768px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_heading {
@@ -277,4 +280,77 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 564px;
+  counter-reset: myCounter;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #161616;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step .step_4 {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #667886;
+  min-height: 35px;
+  min-width: 35px;
+  max-width: 35px;
+  max-height: 35px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step::before::before {
+  content: '';
+  border-left: 1px dotted #667886;
 }
