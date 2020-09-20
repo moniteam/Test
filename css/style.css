@@ -501,8 +501,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 100vh;
 }
 
@@ -645,6 +646,27 @@ body {
   border-radius: 50%;
   -ms-flex-item-align: baseline;
       align-self: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn .swch_sections_wrapper .trigger_btn:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: .15s;
+  -o-transition: .15s;
+  transition: .15s;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn .swch_sections_wrapper .trigger_btn_active {
+  background: #00ABCA;
 }
 
 .all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn_1 {
@@ -691,6 +713,11 @@ body {
 
 .all_communication .container .all_com_wrapper .all_com_content .switch_tabs_wrapper {
   margin: 0 58px;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_wrapper .tabs {
+  -webkit-filter: drop-shadow(0px 4px 17px rgba(2, 87, 102, 0.25));
+          filter: drop-shadow(0px 4px 17px rgba(2, 87, 102, 0.25));
 }
 
 .all_communication .container .all_com_wrapper .all_com_content .switch_tabs_wrapper .tabs .tab_image {

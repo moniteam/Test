@@ -356,7 +356,7 @@ body {
         .all_com_wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             height: 100vh;
             .all_com_head {
                 display: flex;
@@ -443,6 +443,16 @@ body {
                             background: #f1f3f6;
                             border-radius: 50%;
                             align-self: baseline;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &:hover {
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                                transition: .15s;
+                            }
+                        }
+                        .trigger_btn_active {
+                            background: #00ABCA;
                         }
                     }
                 }
@@ -467,6 +477,7 @@ body {
                 .switch_tabs_wrapper {
                     margin: 0 58px;
                     .tabs {
+                        filter: drop-shadow(0px 4px 17px rgba(2, 87, 102, 0.25));
                         .tab_image {
                             display: none;
                         }
