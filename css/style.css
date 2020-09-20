@@ -387,6 +387,8 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-item-align: center;
+      align-self: center;
   width: 370px;
   height: 316px;
   margin-right: 30px;
@@ -489,4 +491,153 @@ body {
   background-position: center;
   margin-left: 39px;
   margin-right: 20px;
+}
+
+.all_communication .container .all_com_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.all_communication .container .all_com_wrapper .all_com_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all_communication .container .all_com_wrapper .all_com_head h3 {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00abca;
+}
+
+.all_communication .container .all_com_wrapper .all_com_head h2 {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #161616;
+  max-width: 555px;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn .name_col {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  color: #161616;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn .description_col {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667886;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn_1 .swch_btn_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn_2 .swch_btn_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_wrapper .tabs .tab_image {
+  display: none;
+}
+
+.all_communication .container .all_com_wrapper .all_com_content .switch_tabs_wrapper .tabs .tab_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
