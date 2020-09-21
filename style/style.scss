@@ -114,7 +114,7 @@ body {
 
 .dstar_iot {
     background-image: url(..//img/background_header.png);
-    
+
     .container {
         height: inherit;
         .dstar_iot_wrapper {
@@ -507,7 +507,8 @@ body {
         .participate_wrapper {
             display: flex;
             flex-direction: column;
-            
+            margin-bottom: 140px;
+
             .participiate_header {
                 font-family: IBM Plex Sans;
                 font-style: normal;
@@ -535,6 +536,7 @@ body {
                     justify-content: space-around;
                     align-items: center;
                     margin: 0 70px;
+                    counter-reset: myCounter;
 
                     .slide_progress_mark {
                         display: flex;
@@ -551,6 +553,15 @@ body {
                         font-size: 14px;
                         line-height: 42px;
                         color: #ffffff;
+
+                        &::after {
+                            counter-increment: myCounter;
+                            content: "Question" counter(myCounter);
+                            display: block;
+                            position: absolute;
+                            margin-top: 70px;
+                            color: black;
+                        }
                     }
                     .slide_progress_mark_1 {
                         background-color: #00abca;
@@ -565,19 +576,33 @@ body {
                     }
                 }
                 .form_wrapper {
+                    display: none;
+                }
+                .form_wrapper_active {
                     display: flex;
                     flex-direction: column;
                     align-self: center;
-
-                    width: 571px;
                     .form {
                         display: flex;
                         flex-direction: column;
                         align-content: center;
+                        .form_question {
+                            font-family: IBM Plex Sans;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 28px;
+                            line-height: 46px;
+                            text-align: center;
+                            color: #161616;
+                        }
+                        .form_submit {
+                            display: none;
+                        }
                         .form_btns {
                             display: flex;
                             flex-direction: column;
-
+                            align-self: center;
+                            max-width: 571px;
                             .radio_btn {
                                 width: 50%;
                                 width: 571px;
@@ -631,6 +656,19 @@ body {
                                 }
                             }
                         }
+                    }
+                }
+                .slider_btns_wrapper {
+                    margin: 0 50px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .slider_move_btn {
+                        width: 225px;
+                        height: 50px;
+                        border: 1px solid #00abca;
+                        box-sizing: border-box;
+                        border-radius: 5px;
                     }
                 }
             }
