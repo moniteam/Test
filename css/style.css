@@ -660,13 +660,13 @@ body {
 .all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn .swch_sections_wrapper .trigger_btn:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  -webkit-transition: .15s;
-  -o-transition: .15s;
-  transition: .15s;
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
 }
 
 .all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn .swch_sections_wrapper .trigger_btn_active {
-  background: #00ABCA;
+  background: #00abca;
 }
 
 .all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn_1 {
@@ -730,4 +730,77 @@ body {
   display: flex;
   max-width: 313px;
   max-height: 635px;
+}
+
+.participate .container .participate_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.participate .container .participate_wrapper .participiate_header {
+  text-transform: capitalize;
+}
+
+.participate .container .participate_wrapper .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.participate .container .participate_wrapper .slider .progress_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.participate .container .participate_wrapper .slider .progress_bar .slide_progress_mark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.participate .container .participate_wrapper .slider .progress_bar .slide_progress_mark_1 {
+  background-color: #00abca;
+}
+
+.participate .container .participate_wrapper .slider .progress_bar .progress_line {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 3px;
+  background-color: #d8d8d8;
+}
+
+.participate .container .participate_wrapper .slider .progress_bar .progress_line_active {
+  background-color: #00abca;
 }

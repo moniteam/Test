@@ -448,11 +448,11 @@ body {
                             align-items: center;
                             &:hover {
                                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                                transition: .15s;
+                                transition: 0.15s;
                             }
                         }
                         .trigger_btn_active {
-                            background: #00ABCA;
+                            background: #00abca;
                         }
                     }
                 }
@@ -486,6 +486,54 @@ body {
                             max-width: 313px;
                             max-height: 635px;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.participate {
+    .container {
+        .participate_wrapper {
+            display: flex;
+            flex-direction: column;
+            .participiate_header {
+                text-transform: capitalize;
+            }
+            .slider {
+                display: flex;
+                flex-direction: column;
+                .progress_bar {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    .slide_progress_mark {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        background-color: #d8d8d8;
+
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 42px;
+                        color: #ffffff;
+                    }
+                    .slide_progress_mark_1 {
+                        background-color: #00abca;
+                    }
+                    .progress_line {
+                        flex-grow: 1;
+                        height: 3px;
+                        background-color: #d8d8d8;
+                    }
+                    .progress_line_active {
+                        background-color: #00abca;
                     }
                 }
             }
