@@ -139,7 +139,6 @@ body {
 
 .dstar_iot {
   background-image: url(..//img/background_header.png);
-  height: 100vh;
 }
 
 .dstar_iot .container {
@@ -158,6 +157,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
+  margin-bottom: 140px;
+  margin-top: 140px;
 }
 
 .dstar_iot .container .dstar_iot_wrapper .description {
@@ -206,7 +207,7 @@ body {
 }
 
 .how_it_works {
-  height: 100vh;
+  margin-top: 140px;
   background-image: url(..//img/2_section/background_map.svg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -220,7 +221,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -367,13 +367,16 @@ body {
   height: 360px;
 }
 
+.aws_solution {
+  margin-top: 140px;
+}
+
 .aws_solution .container .aws_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 50vh;
 }
 
 .aws_solution .container .aws_wrapper .aws_text {
@@ -493,6 +496,10 @@ body {
   margin-right: 20px;
 }
 
+.all_communication {
+  margin-top: 140px;
+}
+
 .all_communication .container .all_com_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,7 +511,6 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 100vh;
 }
 
 .all_communication .container .all_com_wrapper .all_com_head {
@@ -732,6 +738,13 @@ body {
   max-height: 635px;
 }
 
+.participate {
+  margin-top: 140px;
+  background-image: url(..//img/participate_bckg/back_partic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .participate .container .participate_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,7 +756,20 @@ body {
 }
 
 .participate .container .participate_wrapper .participiate_header {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 52px;
   text-transform: capitalize;
+  max-width: 594px;
+  color: #ffffff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 50px;
 }
 
 .participate .container .participate_wrapper .slider {
@@ -772,6 +798,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 70px;
 }
 
 .participate .container .participate_wrapper .slider .progress_bar .slide_progress_mark {
@@ -820,8 +847,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 571px;
 }
 
 .participate .container .participate_wrapper .slider .form_wrapper .form {
@@ -848,10 +876,58 @@ body {
 
 .participate .container .participate_wrapper .slider .form_wrapper .form .form_btns .radio_btn {
   width: 50%;
-  height: 54px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 571px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
   margin-top: 25px;
+}
+
+.participate .container .participate_wrapper .slider .form_wrapper .form .form_btns .radio_btn input[type="radio"] {
+  display: none;
+}
+
+.participate .container .participate_wrapper .slider .form_wrapper .form .form_btns .radio_btn input[type="radio"]:checked + label {
+  background: #00abca;
+  color: #ffffff;
+  background-image: url(..//img/tabs_2_trigger/checked.svg);
+  background-repeat: no-repeat;
+  background-position: 527px;
+}
+
+.participate .container .participate_wrapper .slider .form_wrapper .form .form_btns .radio_btn input[type="radio"]:checked + label span {
+  color: #ffffff;
+}
+
+.participate .container .participate_wrapper .slider .form_wrapper .form .form_btns .radio_btn label {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: 54px;
+  width: 100%;
+  border-radius: 10px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #667886;
+  padding-left: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.participate .container .participate_wrapper .slider .form_wrapper .form .form_btns .radio_btn label span {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 54px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #667886;
+  margin-left: 20px;
 }
