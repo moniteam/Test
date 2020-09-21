@@ -754,6 +754,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 708px;
+  background: #ffffff;
+  -webkit-box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .participate .container .participate_wrapper .slider .progress_bar {
@@ -803,4 +810,48 @@ body {
 
 .participate .container .participate_wrapper .slider .progress_bar .progress_line_active {
   background-color: #00abca;
+}
+
+.participate .container .participate_wrapper .slider .form_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.participate .container .participate_wrapper .slider .form_wrapper .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.participate .container .participate_wrapper .slider .form_wrapper .form .form_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.participate .container .participate_wrapper .slider .form_wrapper .form .form_btns .radio_btn {
+  width: 50%;
+  height: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 25px;
 }
