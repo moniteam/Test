@@ -664,57 +664,98 @@ body {
                     margin: 0 50px;
                     display: flex;
                     justify-content: space-between;
+                    
 
-                    .slider_move_btn {
-                        width: 225px;
-                        height: 50px;
-                        border: 1px solid #00abca;
-                        box-sizing: border-box;
-                        border-radius: 5px;
-                    }
-                    .btn_back {
-                        background-image: url(..//img/icon/arrow_blue_back.svg);
-                        background-repeat: no-repeat;
-                        background-position: 37px 50%;
-                        font-family: IBM Plex Sans;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 18px;
-                        line-height: 36px;
-                        color: #00abca;
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-end;
-                        padding-right: 30px;
-                        transition: 0.2s;
-                        &:hover {
-                            background-color: #00abca;
-                            background-image: url(..//img/icon/arrow_white_back.svg);
-                            color: #ffffff;
+                    button {
+                        cursor: pointer;
+
+                        .slider_move_btn {
+                            width: 225px;
+                            height: 50px;
+                            border: 1px solid #00abca;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                        }
+                        .btn_back {
+                            background-image: url(..//img/icon/arrow_blue_back.svg);
+                            background-repeat: no-repeat;
+                            background-position: 37px 50%;
+                            font-family: IBM Plex Sans;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 36px;
+                            color: #00abca;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            padding-right: 30px;
+                            transition: 0.2s;
+                            &:hover {
+                                background-color: #00abca;
+                                background-image: url(..//img/icon/arrow_white_back.svg);
+                                color: #ffffff;
+                                transition: 0.2s;
+                            }
+                        }
+                        .disabled-link {
+                            background-image: url(..//img/icon/arrow_blue_back.svg);
+                            background-repeat: no-repeat;
+                            background-position: 37px 50%;
+                            font-family: IBM Plex Sans;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 36px;
+                            color: #667886;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            padding-right: 30px;
                             transition: 0.2s;
                         }
-                    }
-                    .btn_forward {
-                        background-image: url(..//img/icon/arrow_blue_forward.svg);
-                        background-repeat: no-repeat;
-                        background-position: 168px 50%;
-                        font-family: IBM Plex Sans;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 18px;
-                        line-height: 36px;
-                        color: #00abca;
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-start;
-                        padding-left: 30px;
-                        transition: 0.2s;
-                        &:hover {
-                            background-color: #00abca;
-                            background-image: url(..//img/icon/arrow_white_forward.svg);
-                            color: #ffffff;
+                        .btn_forward {
+                            background-image: url(..//img/icon/arrow_blue_forward.svg);
+                            background-repeat: no-repeat;
+                            background-position: 168px 50%;
+                            font-family: IBM Plex Sans;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 36px;
+                            color: #00abca;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            padding-left: 30px;
                             transition: 0.2s;
+                            &:hover {
+                                background-color: #00abca;
+                                background-image: url(..//img/icon/arrow_white_forward.svg);
+                                color: #ffffff;
+                                transition: 0.2s;
+                            }
                         }
+                        .btn_get_result {
+                            font-family: IBM Plex Sans;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 36px;
+                            color: #00abca;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: 0.2s;
+                            &:hover {
+                                background-color: #00abca;
+                                color: #ffffff;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+                    .disabled_btn {
+                        cursor: default;
                     }
                 }
             }

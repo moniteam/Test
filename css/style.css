@@ -973,7 +973,11 @@ body {
           justify-content: space-between;
 }
 
-.participate .container .participate_wrapper .slider .slider_btns_wrapper .slider_move_btn {
+.participate .container .participate_wrapper .slider .slider_btns_wrapper button {
+  cursor: pointer;
+}
+
+.participate .container .participate_wrapper .slider .slider_btns_wrapper button .slider_move_btn {
   width: 225px;
   height: 50px;
   border: 1px solid #00abca;
@@ -982,7 +986,7 @@ body {
   border-radius: 5px;
 }
 
-.participate .container .participate_wrapper .slider .slider_btns_wrapper .btn_back {
+.participate .container .participate_wrapper .slider .slider_btns_wrapper button .btn_back {
   background-image: url(..//img/icon/arrow_blue_back.svg);
   background-repeat: no-repeat;
   background-position: 37px 50%;
@@ -1007,7 +1011,7 @@ body {
   transition: 0.2s;
 }
 
-.participate .container .participate_wrapper .slider .slider_btns_wrapper .btn_back:hover {
+.participate .container .participate_wrapper .slider .slider_btns_wrapper button .btn_back:hover {
   background-color: #00abca;
   background-image: url(..//img/icon/arrow_white_back.svg);
   color: #ffffff;
@@ -1016,7 +1020,32 @@ body {
   transition: 0.2s;
 }
 
-.participate .container .participate_wrapper .slider .slider_btns_wrapper .btn_forward {
+.participate .container .participate_wrapper .slider .slider_btns_wrapper button .disabled-link {
+  background-image: url(..//img/icon/arrow_blue_back.svg);
+  background-repeat: no-repeat;
+  background-position: 37px 50%;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: #667886;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 30px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.participate .container .participate_wrapper .slider .slider_btns_wrapper button .btn_forward {
   background-image: url(..//img/icon/arrow_blue_forward.svg);
   background-repeat: no-repeat;
   background-position: 168px 50%;
@@ -1041,11 +1070,44 @@ body {
   transition: 0.2s;
 }
 
-.participate .container .participate_wrapper .slider .slider_btns_wrapper .btn_forward:hover {
+.participate .container .participate_wrapper .slider .slider_btns_wrapper button .btn_forward:hover {
   background-color: #00abca;
   background-image: url(..//img/icon/arrow_white_forward.svg);
   color: #ffffff;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+}
+
+.participate .container .participate_wrapper .slider .slider_btns_wrapper button .btn_get_result {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: #00abca;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.participate .container .participate_wrapper .slider .slider_btns_wrapper button .btn_get_result:hover {
+  background-color: #00abca;
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.participate .container .participate_wrapper .slider .slider_btns_wrapper .disabled_btn {
+  cursor: default;
 }
