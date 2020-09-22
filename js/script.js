@@ -11,4 +11,15 @@ $(document).ready(function () {
 
     $('#active_call').click();
 
+    $('.btn_forward').click(function (e) {
+        e.preventDefault();
+
+        $('.form_wrapper').removeClass('form_wrapper_active');
+
+        $(this).
+
+        console.log("1");
+    });
+
+    
 });

@@ -108,6 +108,7 @@ body {
 }
 
 .header .container_header nav .link_wrapper li a {
+  position: relative;
   font-family: "IBM Plex Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -116,21 +117,19 @@ body {
   color: #ffffff;
 }
 
-.header .container_header nav .link_wrapper li a:hover, .header .container_header nav .link_wrapper li a:active {
+.header .container_header nav .link_wrapper li a:hover {
   color: #00abca;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
 }
 
-.header .container_header nav .link_wrapper li a:hover::after, .header .container_header nav .link_wrapper li a:active::after {
+.header .container_header nav .link_wrapper li a:hover::after {
   content: " ";
   display: block;
   position: absolute;
   width: 16px;
-  border: 2px solid #00abca;
+  border-top: 2px solid #00abca;
   border-radius: 2px;
   margin-top: 8px;
+  left: calc(50% - 8px);
 }
 
 .blue_link {
@@ -233,6 +232,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_heading h3 {
