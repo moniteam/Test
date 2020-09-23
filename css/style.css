@@ -1109,3 +1109,15 @@ body {
 .participate .container .participate_wrapper .slider .disabled_btn {
   cursor: default;
 }
+
+.participate .container .participate_wrapper .slider_hidden {
+  display: none;
+}
+
+.participate .container .participate_wrapper .result_hidden {
+  display: none;
+}
+
+.participate .container .participate_wrapper .result {
+  display: block;
+}

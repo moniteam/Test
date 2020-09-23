@@ -758,6 +758,15 @@ body {
                     cursor: default;
                 }
             }
+            .slider_hidden {
+                display: none;
+            }
+            .result_hidden {
+                display: none;
+            }
+            .result {
+                display: block;
+            }
         }
     }
 }
