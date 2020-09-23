@@ -19,6 +19,7 @@ $(document).ready(function () {
 
     $('.btn_forward').click(function (e) {
         e.preventDefault();
+
         $(slideList[slideNum]).removeClass('form_wrapper_active');
 
         if (slideNum == slideList.length - 1) {
@@ -28,28 +29,29 @@ $(document).ready(function () {
             slideNum++;
         }
 
+
         $(slideList[slideNum]).addClass('form_wrapper_active');
+        $('.slider').attr('data', slideNum);
 
         if (slideNum > 0) {
             $('.disabled-link').addClass('btn_back').removeClass('disabled-link');
         }
+    });
+
+    $('.btn_back').click(function (e) {
+        e.preventDefault();
+
+        $(slideList[slideNum]).removeClass('form_wrapper_active');
         console.log(slideNum);
 
-        $('.btn_back').click(function (e) {
-            e.preventDefault();
+        $(slideList[slideNum]).addClass('form_wrapper_active');
 
-            $(slideList[slideNum]).removeClass('form_wrapper_active');
-
+        if (slideNum < slideList.length - 1) {
+            $('.btn_get_result').text('Next Question').addClass('btn_forward').removeClass('btn_get_result');
+        } else if (slideNum <= 0) {
+            $('.btn_back').addClass('disabled-link').removeClass('btn_back');
+        } else {
             slideNum--;
-            console.log(slideNum);
-            $(slideList[slideNum]).addClass('form_wrapper_active');
-
-            if (slideNum < slideList.length - 1) {
-                $('.btn_get_result').text('Next Question').addClass('btn_forward').removeClass('btn_get_result');
-            }
-            if (slideNum <= 0) {
-                $('.btn_back').addClass('disabled-link').removeClass('btn_back');
-            }
-        });
+        }
     });
 });
