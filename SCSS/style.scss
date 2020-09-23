@@ -565,7 +565,7 @@ body {
                             color: black;
                         }
                     }
-                    .slide_progress_mark_1 {
+                    .slide_progress_mark_active {
                         background-color: #00abca;
                     }
                     .progress_line {
@@ -577,83 +577,85 @@ body {
                         background-color: #00abca;
                     }
                 }
-                .form_wrapper {
-                    display: none;
-                }
-                .form_wrapper_active {
-                    display: flex;
-                    flex-direction: column;
-                    align-self: center;
-                    .form {
+                .slides_wrapper {
+                    .form_wrapper {
+                        display: none;
+                    }
+                    .form_wrapper_active {
                         display: flex;
                         flex-direction: column;
-                        align-content: center;
-                        .form_question {
-                            font-family: IBM Plex Sans;
-                            font-style: normal;
-                            font-weight: 600;
-                            font-size: 28px;
-                            line-height: 46px;
-                            text-align: center;
-                            color: #161616;
-                        }
-                        .form_submit {
-                            display: none;
-                        }
-                        .form_btns {
+                        align-self: center;
+                        .form {
                             display: flex;
                             flex-direction: column;
-                            align-self: center;
-                            max-width: 571px;
-                            .radio_btn {
-                                width: 50%;
-                                width: 571px;
-                                box-sizing: border-box;
-                                border-radius: 10px;
-                                margin-top: 25px;
+                            align-content: center;
+                            .form_question {
+                                font-family: IBM Plex Sans;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 28px;
+                                line-height: 46px;
+                                text-align: center;
+                                color: #161616;
+                            }
+                            .form_submit {
+                                display: none;
+                            }
+                            .form_btns {
+                                display: flex;
+                                flex-direction: column;
+                                align-self: center;
+                                max-width: 571px;
+                                .radio_btn {
+                                    width: 50%;
+                                    width: 571px;
+                                    box-sizing: border-box;
+                                    border-radius: 10px;
+                                    margin-top: 25px;
 
-                                input[type="radio"] {
-                                    display: none;
-                                    &:checked + label {
-                                        background: #00abca;
-                                        color: #ffffff;
-                                        background-image: url(..//img/tabs_2_trigger/checked.svg);
-                                        background-repeat: no-repeat;
-                                        background-position: 527px;
-
-                                        span {
+                                    input[type="radio"] {
+                                        display: none;
+                                        &:checked + label {
+                                            background: #00abca;
                                             color: #ffffff;
+                                            background-image: url(..//img/tabs_2_trigger/checked.svg);
+                                            background-repeat: no-repeat;
+                                            background-position: 527px;
+
+                                            span {
+                                                color: #ffffff;
+                                            }
                                         }
                                     }
-                                }
-                                label {
-                                    display: inline-block;
-                                    cursor: pointer;
-                                    user-select: none;
-                                    line-height: 54px;
-                                    width: 100%;
-                                    border-radius: 10px;
-                                    font-family: IBM Plex Sans;
-                                    font-style: normal;
-                                    font-weight: 600;
-                                    font-size: 24px;
-                                    letter-spacing: -0.02em;
-                                    text-transform: capitalize;
-                                    color: #667886;
-                                    padding-left: 20px;
-
-                                    border: 1px solid rgba(0, 0, 0, 0.1);
-
-                                    span {
-                                        font-family: Open Sans;
-                                        font-style: normal;
-                                        font-weight: normal;
-                                        font-size: 18px;
+                                    label {
+                                        display: inline-block;
+                                        cursor: pointer;
+                                        user-select: none;
                                         line-height: 54px;
+                                        width: 100%;
+                                        border-radius: 10px;
+                                        font-family: IBM Plex Sans;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 24px;
                                         letter-spacing: -0.02em;
                                         text-transform: capitalize;
                                         color: #667886;
-                                        margin-left: 20px;
+                                        padding-left: 20px;
+
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+
+                                        span {
+                                            font-family: Open Sans;
+                                            font-style: normal;
+                                            font-weight: normal;
+                                            font-size: 18px;
+                                            line-height: 54px;
+                                            letter-spacing: -0.02em;
+                                            text-transform: capitalize;
+                                            color: #667886;
+                                            margin-left: 20px;
+                                        }
                                     }
                                 }
                             }
@@ -665,97 +667,95 @@ body {
                     display: flex;
                     justify-content: space-between;
 
-                    button {
+                    .slider_move_btn {
+                        width: 225px;
+                        height: 50px;
                         background-color: #ffffff;
                         cursor: pointer;
                         border: 1px solid #00abca;
                         box-sizing: border-box;
                         border-radius: 5px;
-                        .slider_move_btn {
-                            width: 225px;
-                            height: 50px;
-                        }
-                        .btn_back {
-                            background-image: url(..//img/icon/arrow_blue_back.svg);
-                            background-repeat: no-repeat;
-                            background-position: 37px 50%;
-                            font-family: IBM Plex Sans;
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: 36px;
-                            color: #00abca;
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-end;
-                            padding-right: 30px;
+                    }
+                    .btn_back {
+                        background-image: url(..//img/icon/arrow_blue_back.svg);
+                        background-repeat: no-repeat;
+                        background-position: 37px 50%;
+                        font-family: IBM Plex Sans;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 36px;
+                        color: #00abca;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        padding-right: 30px;
+                        transition: 0.2s;
+                        &:hover {
+                            background-color: #00abca;
+                            background-image: url(..//img/icon/arrow_white_back.svg);
+                            color: #ffffff;
                             transition: 0.2s;
-                            &:hover {
-                                background-color: #00abca;
-                                background-image: url(..//img/icon/arrow_white_back.svg);
-                                color: #ffffff;
-                                transition: 0.2s;
-                            }
-                        }
-                        .disabled-link {
-                            background-image: url(..//img/icon/arrow_gray_back.svg);
-                            background-repeat: no-repeat;
-                            background-position: 37px 50%;
-                            font-family: IBM Plex Sans;
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: 36px;
-                            color: #667886;
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-end;
-                            padding-right: 30px;
-                            transition: 0.2s;
-                        }
-                        .btn_forward {
-                            background-image: url(..//img/icon/arrow_blue_forward.svg);
-                            background-repeat: no-repeat;
-                            background-position: 168px 50%;
-                            font-family: IBM Plex Sans;
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: 36px;
-                            color: #00abca;
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-start;
-                            padding-left: 30px;
-                            transition: 0.2s;
-                            &:hover {
-                                background-color: #00abca;
-                                background-image: url(..//img/icon/arrow_white_forward.svg);
-                                color: #ffffff;
-                                transition: 0.2s;
-                            }
-                        }
-                        .btn_get_result {
-                            font-family: IBM Plex Sans;
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: 36px;
-                            color: #00abca;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            transition: 0.2s;
-                            &:hover {
-                                background-color: #00abca;
-                                color: #ffffff;
-                                transition: 0.2s;
-                            }
                         }
                     }
                     .disabled_btn {
-                        cursor: default;
+                        background-image: url(..//img/icon/arrow_gray_back.svg);
+                        background-repeat: no-repeat;
+                        background-position: 37px 50%;
+                        font-family: IBM Plex Sans;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 36px;
+                        color: #667886;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        padding-right: 30px;
+                        transition: 0.2s;
                     }
+                    .btn_forward {
+                        background-image: url(..//img/icon/arrow_blue_forward.svg);
+                        background-repeat: no-repeat;
+                        background-position: 168px 50%;
+                        font-family: IBM Plex Sans;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 36px;
+                        color: #00abca;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        padding-left: 30px;
+                        transition: 0.2s;
+                        &:hover {
+                            background-color: #00abca;
+                            background-image: url(..//img/icon/arrow_white_forward.svg);
+                            color: #ffffff;
+                            transition: 0.2s;
+                        }
+                    }
+                    .btn_get_result {
+                        font-family: IBM Plex Sans;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 36px;
+                        color: #00abca;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: 0.2s;
+                        &:hover {
+                            background-color: #00abca;
+                            color: #ffffff;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+                .disabled_btn {
+                    cursor: default;
                 }
             }
         }

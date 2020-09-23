@@ -14,56 +14,43 @@ $(document).ready(function () {
     //end tabs
 
     //slider form
-    let slideNum = 0;
-    const slideList = $('.form_wrapper');
 
-    $('.btn_forward').click(function (e) {
-        e.preventDefault();
+    const getCurrentSliderStep = () => $('#slider').attr('data-slide-step');
+    console.log(getCurrentSliderStep());
 
-        $(slideList[slideNum]).removeClass('form_wrapper_active');
+    const setCurrentSliderStep = function (step) {
+        $('#slider').attr('data-slide-step', step);
+    }
+    
+    const setActiveProgress = function (step) {
+        $('.slide_progress_mark[data-progress-step="' + step + '"]').addClass('slide_progress_mark_active');
+        $('.progress_line[data-line-step="' + step + '"]').addClass('progress_line_active');
+    }
 
-        if (slideNum == slideList.length - 1) {
-            $(this).text('Get Result').removeClass('btn_forward').addClass('btn_get_result');
-            console.log(slideNum);
+    const setActiveSlide = function (slide) {
+        $('.form_wrapper').removeClass('form_wrapper_active');
+        $('.form_wrapper[data-slide="' + slide + '"]').addClass('form_wrapper_active');
+    }
+
+    const changeSlide = function (sliderCurrentStep) {
+
+        let prevButton = $('.btn_back[data-batton="prev"]');
+        let nextButton = $('.btn_forward[data-batton="next"]');
+        let slidesCount = $('.form_wrapper').legth;
+
+        if (sliderCurrentStep == 0) {
+            prevButton.addClass('disabled_btn');
         } else {
-            slideNum++;
+            prevButton.romoveClass('disabled_btn');
+        }
+
+        if (sliderCurrentStep == (slidesCount - 1)) {
+            nextButton.text('Get Result');
+        } else {
+            nextButton.text('Next Question');
         }
 
 
-        $(slideList[slideNum]).addClass('form_wrapper_active');
-        $('.slider').attr('data-step', slideNum);
+    }
 
-        if (slideNum > 0) {
-            $('.disabled-link').removeClass('disabled-link').addClass('btn_back');
-            $('.disabled_btn').removeClass('disabled_btn').addClass('active_btn_back');
-        }
-
-        let slideNumData = $('.slider').data('step');
-        console.log('Номер слайда ' + slideNumData);
-
-
-    });
-
-    $('.active_btn_back').click(function (e) {
-        e.preventDefault();
-
-        let slideNumData = $('.slider').data('step');
-
-        slideNumData - 1;
-
-        console.log(slideNumData);
-
-        $(slideList[slideNumData]).removeClass('form_wrapper_active');
-
-        // $(slideList[slideNumData - 1]).addClass('form_wrapper_active');
-
-        // if (slideNumData < slideList.length - 1) {
-        //     $('.btn_get_result').text('Next Question').addClass('btn_forward').removeClass('btn_get_result');
-        // } else if (slideNumData <= 0) {
-        //     $('.btn_back').addClass('disabled-link').removeClass('btn_back');
-        // }
-        //else {
-        //     slideNumData - 1;
-        // }
-    });
 });
