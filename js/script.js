@@ -31,33 +31,39 @@ $(document).ready(function () {
 
 
         $(slideList[slideNum]).addClass('form_wrapper_active');
-        $('.slider').attr('data-id', slideNum);
+        $('.slider').attr('data-step', slideNum);
 
         if (slideNum > 0) {
             $('.disabled-link').removeClass('disabled-link').addClass('btn_back');
             $('.disabled_btn').removeClass('disabled_btn').addClass('active_btn_back');
         }
 
+        let slideNumData = $('.slider').data('step');
+        console.log('Номер слайда ' + slideNumData);
+
 
     });
 
-    $('.disabled_btn').click(function (e) {
+    $('.active_btn_back').click(function (e) {
         e.preventDefault();
 
-        let slideNumData = $('.slider').data('id');
+        let slideNumData = $('.slider').data('step');
+
+        slideNumData - 1;
 
         console.log(slideNumData);
 
-        // $(slideList[slideNum]).removeClass('form_wrapper_active');
+        $(slideList[slideNumData]).removeClass('form_wrapper_active');
 
-        // $(slideList[slideNum]).addClass('form_wrapper_active');
+        // $(slideList[slideNumData - 1]).addClass('form_wrapper_active');
 
-        // if (slideNum < slideList.length - 1) {
+        // if (slideNumData < slideList.length - 1) {
         //     $('.btn_get_result').text('Next Question').addClass('btn_forward').removeClass('btn_get_result');
-        // } else if (slideNum <= 0) {
+        // } else if (slideNumData <= 0) {
         //     $('.btn_back').addClass('disabled-link').removeClass('btn_back');
-        // } else {
-        //     slideNum--;
+        // }
+        //else {
+        //     slideNumData - 1;
         // }
     });
 });
