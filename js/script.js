@@ -14,7 +14,6 @@ $(document).ready(function () {
     //end tabs
 
     //slider form
-
     const getCurrentSliderStep = () => $('#slider').attr('data-slide-step');
     console.log(getCurrentSliderStep());
 
@@ -47,8 +46,10 @@ $(document).ready(function () {
 
         if (sliderCurrentStep == 0) {
             prevButton.addClass('disabled_btn');
+            prevButton.removeClass('btn_back');
         } else {
             prevButton.removeClass('disabled_btn');
+            prevButton.addClass('btn_back');
         }
 
         if (sliderCurrentStep == (slidesCount - 1)) {
@@ -84,7 +85,6 @@ $(document).ready(function () {
             }
             setNonActimeProgress(sliderCurrentStep);
             sliderCurrentStep--;
-
         } else {
             sliderCurrentStep++;
             setActiveProgress(sliderCurrentStep);
@@ -92,5 +92,6 @@ $(document).ready(function () {
 
         changeSlide(sliderCurrentStep);
     });
+    // slider form end
 
 });

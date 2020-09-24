@@ -713,6 +713,8 @@ body {
                         justify-content: flex-end;
                         padding-right: 30px;
                         transition: 0.2s;
+                        cursor: default;
+                        border: 1px solid #667886;
                     }
                     .btn_forward {
                         background-image: url(..//img/icon/arrow_blue_forward.svg);
@@ -753,9 +755,6 @@ body {
                             transition: 0.2s;
                         }
                     }
-                }
-                .disabled_btn {
-                    cursor: default;
                 }
             }
             .slider_hidden {

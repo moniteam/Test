@@ -1041,6 +1041,8 @@ body {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  cursor: default;
+  border: 1px solid #667886;
 }
 
 .participate .container .participate_wrapper .slider .slider_btns_wrapper .btn_forward {
@@ -1104,10 +1106,6 @@ body {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-}
-
-.participate .container .participate_wrapper .slider .disabled_btn {
-  cursor: default;
 }
 
 .participate .container .participate_wrapper .slider_hidden {
