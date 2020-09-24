@@ -760,7 +760,66 @@ body {
                 display: none;
             }
             .result {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 708px;
+                background: #ffffff;
+                box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+
+                .answer {
+                    font-family: IBM Plex Sans;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 46px;
+                    text-align: center;
+                    color: #161616;
+
+                    &::before {
+                        content: " ";
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #00abca;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        background-image: url(..//img/icon/check_aws.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 40px;
+                    }
+                }
+                .description_answer {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 34px;
+                    text-align: center;
+                    color: #667886;
+                    max-width: 661px;
+                }
+                .button_try_now {
+                    width: 160px;
+                    height: 50px;
+                    background: #00abca;
+                    border-radius: 5px;
+                    font-family: IBM Plex Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #ffffff;
+                    text-align: center;
+                    padding: 7px 45px;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -779,6 +838,18 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 992px;
+
+        .aws_wrapper {
+            flex-direction: column;
+
+            .aws_list {
+                flex-direction: column;
+
+                .list_row {
+                    margin: 10px auto;
+                }
+            }
+        }
     }
 }
 
@@ -801,7 +872,6 @@ body {
 
         .aws_wrapper {
             flex-direction: column;
-            align-content: center;
         }
     }
 }
@@ -824,11 +894,13 @@ body {
 
         .aws_wrapper {
             flex-direction: column;
-            align-content: center;
 
             .aws_list {
                 flex-direction: column;
-                align-content: center;
+
+                .list_row {
+                    margin: 10px auto;
+                }
             }
         }
     }
@@ -851,11 +923,13 @@ body {
 
         .aws_wrapper {
             flex-direction: column;
-            align-content: center;
 
             .aws_list {
                 flex-direction: column;
-                align-content: center;
+
+                .list_row {
+                    margin: 10px auto;
+                }
             }
         }
     }
