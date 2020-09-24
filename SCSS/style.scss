@@ -791,6 +791,18 @@ body {
         .dstar_iot_wrapper {
             flex-direction: column;
         }
+
+        .how_it_works_wrapper {
+            .how_it_content {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .aws_wrapper {
+            flex-direction: column;
+            align-content: center;
+        }
     }
 }
 
@@ -803,6 +815,22 @@ body {
         .dstar_iot_wrapper {
             flex-direction: column;
         }
+
+        .how_it_works_wrapper {
+            .how_it_content {
+                flex-direction: column;
+            }
+        }
+
+        .aws_wrapper {
+            flex-direction: column;
+            align-content: center;
+
+            .aws_list {
+                flex-direction: column;
+                align-content: center;
+            }
+        }
     }
 }
 @media (max-width: 480px) {
@@ -813,6 +841,22 @@ body {
 
         .dstar_iot_wrapper {
             flex-direction: column;
+        }
+
+        .how_it_works_wrapper {
+            .how_it_content {
+                flex-direction: column;
+            }
+        }
+
+        .aws_wrapper {
+            flex-direction: column;
+            align-content: center;
+
+            .aws_list {
+                flex-direction: column;
+                align-content: center;
+            }
         }
     }
 }
