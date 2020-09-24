@@ -50,12 +50,6 @@ body {
           flex-direction: column;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1170px;
-}
-
 .header {
   position: absolute;
   margin-top: 13px;
@@ -148,10 +142,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1122,4 +1112,34 @@ body {
 
 .participate .container .participate_wrapper .result {
   display: block;
+}
+
+@media (min-width: 1170px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 992px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+  }
+  .container .dstar_iot_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
