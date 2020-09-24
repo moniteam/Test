@@ -951,6 +951,10 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.participate .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn label:hover {
+  border: 1px solid #00abca;
+}
+
 .participate .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn label span {
   font-family: Open Sans;
   font-style: normal;
