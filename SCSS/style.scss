@@ -114,7 +114,7 @@ body {
         height: inherit;
         .dstar_iot_wrapper {
             display: flex;
-            
+
             align-items: center;
             height: inherit;
             margin-bottom: 140px;
@@ -774,7 +774,7 @@ body {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1169px) {
     .container {
         margin-left: auto;
         margin-right: auto;
@@ -787,6 +787,29 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 768px;
+
+        .dstar_iot_wrapper {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 481px;
+
+        .dstar_iot_wrapper {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
 
         .dstar_iot_wrapper {
             flex-direction: column;
