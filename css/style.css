@@ -132,6 +132,7 @@ body {
 
 .dstar_iot {
   background-image: url(..//img/background_header.png);
+  background-size: cover;
 }
 
 .dstar_iot .container {
@@ -892,7 +893,6 @@ body {
           flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
-  max-width: 571px;
 }
 
 .participate .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn {
@@ -1191,7 +1191,7 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1025px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1199,11 +1199,23 @@ body {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1169px) {
+@media (min-width: 992px) and (max-width: 1024px) {
   .container {
+    max-width: 992px;
     margin-left: auto;
     margin-right: auto;
-    width: 992px;
+  }
+  .container .dstar_iot_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .dstar_iot_wrapper .description {
+    max-width: 992px;
   }
   .container .aws_wrapper {
     -webkit-box-orient: vertical;
@@ -1224,9 +1236,9 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 768px;
+    max-width: 768px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .container .dstar_iot_wrapper {
     -webkit-box-orient: vertical;
@@ -1253,9 +1265,9 @@ body {
 
 @media (min-width: 481px) and (max-width: 767px) {
   .container {
+    max-width: 481px;
     margin-left: auto;
     margin-right: auto;
-    width: 481px;
   }
   .container .dstar_iot_wrapper {
     -webkit-box-orient: vertical;
@@ -1288,9 +1300,7 @@ body {
 
 @media (max-width: 480px) {
   .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 320px;
+    max-width: 480px;
   }
   .container .dstar_iot_wrapper {
     -webkit-box-orient: vertical;

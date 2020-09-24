@@ -109,7 +109,7 @@ body {
 
 .dstar_iot {
     background-image: url(..//img/background_header.png);
-
+    background-size: cover;
     .container {
         height: inherit;
         .dstar_iot_wrapper {
@@ -599,7 +599,7 @@ body {
                                 display: flex;
                                 flex-direction: column;
                                 align-self: center;
-                                max-width: 571px;
+                            
                                 .radio_btn {
                                     width: 50%;
                                     width: 571px;
@@ -825,7 +825,7 @@ body {
     }
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1025px) {
     .container {
         margin-left: auto;
         margin-right: auto;
@@ -833,11 +833,20 @@ body {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1169px) {
+@media (min-width: 992px) and (max-width: 1024px) {
     .container {
+        max-width: 992px;
         margin-left: auto;
         margin-right: auto;
-        width: 992px;
+
+        .dstar_iot_wrapper {
+            flex-direction: column;
+            align-items: center;
+
+            .description {
+                max-width: 992px;
+            }
+        }
 
         .aws_wrapper {
             flex-direction: column;
@@ -855,9 +864,9 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 768px;
+        max-width: 768px;
+        margin-left: 10px;
+        margin-right: 10px;
 
         .dstar_iot_wrapper {
             flex-direction: column;
@@ -878,9 +887,9 @@ body {
 
 @media (min-width: 481px) and (max-width: 767px) {
     .container {
+        max-width: 481px;
         margin-left: auto;
         margin-right: auto;
-        width: 481px;
 
         .dstar_iot_wrapper {
             flex-direction: column;
@@ -907,9 +916,7 @@ body {
 }
 @media (max-width: 480px) {
     .container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 320px;
+        max-width: 480px;
 
         .dstar_iot_wrapper {
             flex-direction: column;
