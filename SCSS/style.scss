@@ -238,6 +238,7 @@ body {
                         font-size: 18px;
                         line-height: 26px;
                         color: #161616;
+                        ps
                         .step_4 {
                             flex-wrap: wrap;
                         }
@@ -266,13 +267,14 @@ body {
                         &::after {
                             content: "";
                             display: flex;
+
                         }
                     }
                 }
             }
             .mac {
                 align-self: center;
-                width: 670px;
+                max-width: 670px;
                 height: 360px;
             }
         }

@@ -333,7 +333,8 @@ body {
   color: #161616;
 }
 
-.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step .step_4 {
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step ps
+.step_4 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -379,7 +380,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 670px;
+  max-width: 670px;
   height: 360px;
 }
 
