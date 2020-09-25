@@ -860,6 +860,24 @@ body {
                     cursor: pointer;
                 }
             }
+            .back_block_1 {
+                align-self: center;
+                width: 96%;
+                height: 20px;
+                background: #4ebbcf;
+                box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .back_block_2 {
+                align-self: center;
+                width: 93%;
+                height: 20px;
+                background: #34B3C9;
+                box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
         }
     }
 }

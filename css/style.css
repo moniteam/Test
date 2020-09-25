@@ -1238,6 +1238,32 @@ body {
   cursor: pointer;
 }
 
+.participate .container .participate_wrapper .back_block_1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 96%;
+  height: 20px;
+  background: #4ebbcf;
+  -webkit-box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.participate .container .participate_wrapper .back_block_2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 93%;
+  height: 20px;
+  background: #34B3C9;
+  -webkit-box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .footer {
   background-image: url(..//img/footer_bckg.jpg);
   background-repeat: no-repeat;
