@@ -115,7 +115,6 @@ body {
         height: inherit;
         .dstar_iot_wrapper {
             display: flex;
-
             align-items: center;
             height: inherit;
             margin-bottom: 260px;
@@ -132,7 +131,6 @@ body {
                     font-weight: bold;
                     font-size: 54px;
                     line-height: 68px;
-                    
                 }
                 .text_description {
                     font-family: Open Sans;
@@ -875,7 +873,7 @@ body {
                 align-self: center;
                 width: 93%;
                 height: 20px;
-                background: #34B3C9;
+                background: #34b3c9;
                 box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
@@ -1153,6 +1151,10 @@ body {
         max-width: 481px;
         margin-left: auto;
         margin-right: auto;
+
+        .container_header {
+            flex-direction: column;
+        }
 
         .dstar_iot_wrapper {
             flex-direction: column;
