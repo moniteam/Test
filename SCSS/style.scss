@@ -44,6 +44,7 @@ ul {
 body {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
 
 .header {
@@ -141,14 +142,27 @@ body {
                     line-height: 30px;
                     color: #eeeeee;
                 }
-                button {
-                    width: 172px;
-                    height: 54px;
-                    background: #00abca;
-                    border-radius: 5px;
-                    color: #ffffff;
-                    &:hover {
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+                a {
+                    align-self: flex-start;
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                        width: 172px;
+                        height: 54px;
+                        background: #00abca;
+                        border-radius: 5px;
+                        font-family: IBM Plex Sans;
+                        font-style: normal;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        font-size: 18px;
+                        line-height: 16px;
+                        text-align: center;
+                        &:hover {
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+                        }
                     }
                 }
             }
@@ -320,6 +334,8 @@ body {
                     flex-direction: column;
                     justify-content: space-around;
                     flex-grow: 1;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
                     .list_row {
                         display: flex;
                         align-items: center;
@@ -329,6 +345,8 @@ body {
                         font-size: 18px;
                         line-height: 18px;
                         color: #161616;
+                        margin-top: 20px;
+                        margin-bottom: 40px;
                         &::before {
                             content: " ";
                             display: flex;
@@ -376,6 +394,7 @@ body {
                     text-align: center;
                     text-transform: uppercase;
                     color: #00abca;
+                    margin-bottom: 15px;
                 }
                 h2 {
                     font-family: IBM Plex Sans;
@@ -392,6 +411,7 @@ body {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                margin-top: 50px;
                 .switch_tabs_btn {
                     display: flex;
                     flex-direction: column;

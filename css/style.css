@@ -48,6 +48,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 100%;
 }
 
 .header {
@@ -183,15 +184,36 @@ body {
   color: #eeeeee;
 }
 
-.dstar_iot .container .dstar_iot_wrapper .description button {
+.dstar_iot .container .dstar_iot_wrapper .description a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.dstar_iot .container .dstar_iot_wrapper .description a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
   width: 172px;
   height: 54px;
   background: #00abca;
   border-radius: 5px;
-  color: #ffffff;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
 }
 
-.dstar_iot .container .dstar_iot_wrapper .description button:hover {
+.dstar_iot .container .dstar_iot_wrapper .description a div:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
 }
@@ -448,6 +470,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .aws_solution .container .aws_wrapper .aws_list .list_col .list_row {
@@ -463,6 +487,8 @@ body {
   font-size: 18px;
   line-height: 18px;
   color: #161616;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .aws_solution .container .aws_wrapper .aws_list .list_col .list_row::before {
@@ -529,6 +555,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #00abca;
+  margin-bottom: 15px;
 }
 
 .all_communication .container .all_com_wrapper .all_com_head h2 {
@@ -551,6 +578,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 50px;
 }
 
 .all_communication .container .all_com_wrapper .all_com_content .switch_tabs_btn {
