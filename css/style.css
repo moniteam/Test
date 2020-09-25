@@ -148,8 +148,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
-  margin-bottom: 140px;
-  margin-top: 140px;
+  margin-bottom: 260px;
+  margin-top: 267px;
 }
 
 .dstar_iot .container .dstar_iot_wrapper .description {
@@ -259,6 +259,7 @@ body {
       align-self: center;
   text-transform: uppercase;
   color: #00abca;
+  margin-bottom: 10px;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_heading h2 {
@@ -271,6 +272,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   text-transform: capitalize;
+  margin-bottom: 20px;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_heading span {
@@ -488,7 +490,7 @@ body {
   line-height: 18px;
   color: #161616;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .aws_solution .container .aws_wrapper .aws_list .list_col .list_row::before {
@@ -766,6 +768,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .participate .background_participate {
