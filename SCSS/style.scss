@@ -924,6 +924,96 @@ body {
                                     border: 1px solid #00abca;
                                 }
                             }
+                            .social_1 {
+                                background-image: url(..//img/icon/footer_social/social_white/tweeter_white.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                &:hover {
+                                    background-image: url(..//img/icon/footer_social/social_blue/tweeter_blue.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                            .social_2 {
+                                background-image: url(..//img/icon/footer_social/social_white/facebook_white.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                &:hover {
+                                    background-image: url(..//img/icon/footer_social/social_blue/facebook_blue.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                            .social_3 {
+                                background-image: url(..//img/icon/footer_social/social_white/linkedin_white.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                &:hover {
+                                    background-image: url(..//img/icon/footer_social/social_blue/linkedin_blue.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                            .social_4 {
+                                background-image: url(..//img/icon/footer_social/social_white/medium_white.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                &:hover {
+                                    background-image: url(..//img/icon/footer_social/social_blue/medium_blue.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                            .social_5 {
+                                background-image: url(..//img/icon/footer_social/social_white/instagram_white.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                &:hover {
+                                    background-image: url(..//img/icon/footer_social/social_blue/instagram_blue.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                            .social_6 {
+                                background-image: url(..//img/icon/footer_social/social_white/telegram_white.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                &:hover {
+                                    background-image: url(..//img/icon/footer_social/social_blue/telegram_blue.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                            .social_7 {
+                                background-image: url(..//img/icon/footer_social/social_white/vk_white.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                &:hover {
+                                    background-image: url(..//img/icon/footer_social/social_blue/vk_blue.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                            .social_8 {
+                                background-image: url(..//img/icon/footer_social/social_white/reddit_white.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                &:hover {
+                                    background-image: url(..//img/icon/footer_social/social_blue/reddit_blue.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                            .social_9 {
+                                background-image: url(..//img/icon/footer_social/social_white/youtube_white.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                &:hover {
+                                    background-image: url(..//img/icon/footer_social/social_blue/youtube_blue.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
                         }
                     }
                 }
@@ -980,14 +1070,6 @@ body {
 
         .aws_wrapper {
             flex-direction: column;
-
-            .aws_list {
-                flex-direction: column;
-
-                .list_row {
-                    margin: 10px auto;
-                }
-            }
         }
     }
 }
@@ -1011,6 +1093,14 @@ body {
 
         .aws_wrapper {
             flex-direction: column;
+
+            .aws_list {
+                flex-direction: column;
+
+                .list_row {
+                    margin: 10px auto;
+                }
+            }
         }
     }
 }
