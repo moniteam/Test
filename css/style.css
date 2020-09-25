@@ -160,7 +160,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 295px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -182,6 +181,8 @@ body {
   font-size: 16px;
   line-height: 30px;
   color: #eeeeee;
+  margin-top: 18px;
+  margin-bottom: 47px;
 }
 
 .dstar_iot .container .dstar_iot_wrapper .description a {
