@@ -51,6 +51,10 @@ body {
   max-width: 100%;
 }
 
+.comtainer {
+  overflow: hidden;
+}
+
 .header {
   position: absolute;
   margin-top: 13px;
@@ -333,7 +337,7 @@ body {
   color: #161616;
 }
 
-.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step ps .step_4 {
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step .step_4 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
