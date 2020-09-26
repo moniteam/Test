@@ -333,8 +333,7 @@ body {
   color: #161616;
 }
 
-.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step ps
-.step_4 {
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step ps .step_4 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -821,9 +820,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 708px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #ffffff;
   -webkit-box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
@@ -839,7 +838,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 70px;
+  margin: 58px 70px 102px;
   counter-reset: myCounter;
 }
 
@@ -870,7 +869,7 @@ body {
   content: "Question" counter(myCounter);
   display: block;
   position: absolute;
-  margin-top: 70px;
+  margin-top: 80px;
   color: black;
 }
 
@@ -942,15 +941,28 @@ body {
           flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
+  width: 48.8%;
+  margin-top: 40px;
 }
 
 .participate .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn {
-  width: 50%;
-  width: 571px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
-  margin-top: 25px;
+  height: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.participate .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn:hover {
+  border: 1px solid #00abca;
+}
+
+.participate .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.participate .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn:nth-child(odd) {
+  margin-bottom: 25px;
 }
 
 .participate .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn input[type="radio"] {
@@ -976,7 +988,6 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  line-height: 54px;
   width: 100%;
   border-radius: 10px;
   font-family: IBM Plex Sans;
@@ -987,11 +998,6 @@ body {
   text-transform: capitalize;
   color: #667886;
   padding-left: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.participate .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn label:hover {
-  border: 1px solid #00abca;
 }
 
 .participate .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn label span {
@@ -1007,13 +1013,17 @@ body {
 }
 
 .participate .container .participate_wrapper .slider .slider_btns_wrapper {
-  margin: 0 50px;
+  margin: 50px 50px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .participate .container .participate_wrapper .slider .slider_btns_wrapper .slider_move_btn {
