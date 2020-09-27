@@ -228,9 +228,9 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    height: 564px;
                     max-width: 470px;
-                    counter-reset: myCounter;
+                    list-style-type: none;
+                    position: relative;
                     .step {
                         display: flex;
                         flex-direction: row;
@@ -242,12 +242,32 @@ body {
                         font-size: 18px;
                         line-height: 26px;
                         color: #161616;
+                        position: relative;
                         .step_4 {
                             flex-wrap: wrap;
                         }
-                        &::before {
-                            counter-increment: myCounter;
-                            content: counter(myCounter);
+                        &:first-child::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: calc(25px / 2 + 5px);
+                            z-index: 1;
+                            border-right: 1px solid #ffffff;
+                            height: 50%;
+                        }
+                        &:last-child::before {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: calc(25px / 2 + 5px);
+                            z-index: 1;
+                            border-right: 1px solid #fff;
+                            height: 50%;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .list_counter {
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -264,6 +284,7 @@ body {
                             max-width: 35px;
                             max-height: 35px;
                             background-color: #ffffff;
+                            z-index: 2;
                             border-radius: 5px;
                             box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
                         }
@@ -271,6 +292,15 @@ body {
                             content: "";
                             display: flex;
                         }
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: calc(25px / 2 + 5px);
+                        z-index: 1;
+                        border-right: 1px dashed #ccc;
+                        height: 100%;
                     }
                 }
             }

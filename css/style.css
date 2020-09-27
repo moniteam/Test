@@ -312,9 +312,9 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 564px;
   max-width: 470px;
-  counter-reset: myCounter;
+  list-style-type: none;
+  position: relative;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step {
@@ -335,6 +335,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #161616;
+  position: relative;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step .step_4 {
@@ -342,9 +343,31 @@ body {
       flex-wrap: wrap;
 }
 
-.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step::before {
-  counter-increment: myCounter;
-  content: counter(myCounter);
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(25px / 2 + 5px);
+  z-index: 1;
+  border-right: 1px solid #ffffff;
+  height: 50%;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step:last-child::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(25px / 2 + 5px);
+  z-index: 1;
+  border-right: 1px solid #fff;
+  height: 50%;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step:last-child {
+  margin-bottom: 0;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step .list_counter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,6 +390,7 @@ body {
   max-width: 35px;
   max-height: 35px;
   background-color: #ffffff;
+  z-index: 2;
   border-radius: 5px;
   -webkit-box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
@@ -377,6 +401,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(25px / 2 + 5px);
+  z-index: 1;
+  border-right: 1px dashed #ccc;
+  height: 100%;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_content .mac {
