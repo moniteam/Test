@@ -227,7 +227,7 @@ body {
   margin-top: 140px;
   background-image: url(..//img/2_section/background_map.svg);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right -9px top 196px;
 }
 
 .how_it_works .how_it_works_wrapper {
@@ -250,7 +250,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 96px;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_heading h3 {
@@ -277,7 +277,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   text-transform: capitalize;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_heading span {
@@ -312,9 +312,9 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  max-width: 470px;
   list-style-type: none;
   position: relative;
+  margin-right: 30px;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step {
@@ -328,7 +328,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 500;
@@ -336,11 +336,6 @@ body {
   line-height: 26px;
   color: #161616;
   position: relative;
-}
-
-.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step .step_4 {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step:first-child::before {
@@ -403,6 +398,21 @@ body {
   display: flex;
 }
 
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step_4 {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 33px;
+  margin-bottom: 32px;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step_4 div:last-child a {
+  margin-right: 33px;
+}
+
+.how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps .step_5 {
+  margin-bottom: 39px;
+}
+
 .how_it_works .how_it_works_wrapper .how_it_content .how_it_steps .steps::before {
   content: "";
   position: absolute;
@@ -418,7 +428,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   max-width: 670px;
-  height: 360px;
+  max-height: 360px;
 }
 
 .aws_solution {
@@ -491,11 +501,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #f1f3f6;
   border-radius: 15px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  padding: 58px 39px;
 }
 
 .aws_solution .container .aws_wrapper .aws_list .list_col {
@@ -508,11 +519,6 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .aws_solution .container .aws_wrapper .aws_list .list_col .list_row {
@@ -528,8 +534,6 @@ body {
   font-size: 18px;
   line-height: 18px;
   color: #161616;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .aws_solution .container .aws_wrapper .aws_list .list_col .list_row::before {
@@ -550,7 +554,6 @@ body {
   background-image: url(..//img/icon/check_aws.svg);
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 39px;
   margin-right: 20px;
 }
 

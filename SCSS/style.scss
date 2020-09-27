@@ -179,16 +179,15 @@ body {
     margin-top: 140px;
     background-image: url(..//img/2_section/background_map.svg);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right -9px top 196px;
     .how_it_works_wrapper {
         display: flex;
         flex-direction: column;
-        // height: 100vh;
         justify-content: space-around;
         .how_it_heading {
             display: flex;
             flex-direction: column;
-            margin-bottom: 100px;
+            margin-bottom: 96px;
             h3 {
                 font-family: IBM Plex Sans;
                 font-style: normal;
@@ -208,7 +207,7 @@ body {
                 line-height: 54px;
                 align-self: center;
                 text-transform: capitalize;
-                margin-bottom: 20px;
+                margin-bottom: 16px;
             }
             span {
                 font-family: Open Sans;
@@ -228,14 +227,15 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    max-width: 470px;
+
                     list-style-type: none;
                     position: relative;
+                    margin-right: 30px;
                     .step {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        margin-bottom: 35px;
+                        margin-bottom: 30px;
                         font-family: IBM Plex Sans;
                         font-style: normal;
                         font-weight: 500;
@@ -243,9 +243,7 @@ body {
                         line-height: 26px;
                         color: #161616;
                         position: relative;
-                        .step_4 {
-                            flex-wrap: wrap;
-                        }
+
                         &:first-child::before {
                             content: "";
                             position: absolute;
@@ -293,6 +291,21 @@ body {
                             display: flex;
                         }
                     }
+                    .step_4 {
+                        flex-wrap: wrap;
+                        line-height: 33px;
+                        margin-bottom: 32px;
+                        div {
+                            &:last-child {
+                                a {
+                                    margin-right: 33px;
+                                }
+                            }
+                        }
+                    }
+                    .step_5 {
+                        margin-bottom: 39px;
+                    }
                     &::before {
                         content: "";
                         position: absolute;
@@ -307,7 +320,7 @@ body {
             .mac {
                 align-self: center;
                 max-width: 670px;
-                height: 360px;
+                max-height: 360px;
             }
         }
     }
@@ -362,27 +375,25 @@ body {
             }
             .aws_list {
                 display: flex;
+                justify-content: space-between;
                 background: #f1f3f6;
                 border-radius: 15px;
-                flex-grow: 1;
+                padding: 58px 39px;
                 .list_col {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    flex-grow: 1;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
+
                     .list_row {
                         display: flex;
                         align-items: center;
+
                         font-family: IBM Plex Sans;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 18px;
                         line-height: 18px;
                         color: #161616;
-                        margin-top: 20px;
-                        margin-bottom: 20px;
                         &::before {
                             content: " ";
                             display: flex;
@@ -395,7 +406,6 @@ body {
                             background-image: url(..//img/icon/check_aws.svg);
                             background-repeat: no-repeat;
                             background-position: center;
-                            margin-left: 39px;
                             margin-right: 20px;
                         }
                     }
@@ -404,7 +414,6 @@ body {
         }
     }
 }
-
 .all_communication {
     margin-top: 140px;
     background-image: url(..//img/all_com_bckg/illustration.svg);
