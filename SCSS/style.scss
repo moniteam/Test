@@ -394,14 +394,14 @@ body {
                         font-size: 18px;
                         line-height: 18px;
                         color: #161616;
+                        white-space: normal;
                         &::before {
                             content: " ";
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            background-color: #00abca;
+                            display: block;
                             width: 24px;
                             height: 24px;
+                            text-align: center;
+                            background-color: #00abca;
                             border-radius: 50%;
                             background-image: url(..//img/icon/check_aws.svg);
                             background-repeat: no-repeat;
@@ -409,6 +409,9 @@ body {
                             margin-right: 20px;
                         }
                     }
+                }
+                .list_col_2 {
+                    flex-basis: 50%;
                 }
             }
         }

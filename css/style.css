@@ -534,27 +534,26 @@ body {
   font-size: 18px;
   line-height: 18px;
   color: #161616;
+  white-space: normal;
 }
 
 .aws_solution .container .aws_wrapper .aws_list .list_col .list_row::before {
   content: " ";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #00abca;
+  display: block;
   width: 24px;
   height: 24px;
+  text-align: center;
+  background-color: #00abca;
   border-radius: 50%;
   background-image: url(..//img/icon/check_aws.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 20px;
+}
+
+.aws_solution .container .aws_wrapper .aws_list .list_col_2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .all_communication {
