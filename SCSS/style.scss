@@ -1207,7 +1207,7 @@ body {
                 flex-direction: column;
 
                 .aws_list {
-                    flex-direction: column;
+                    flex-wrap: wrap;
 
                     .list_row {
                         margin: 10px auto;
@@ -1234,7 +1234,6 @@ body {
         padding-left: 10px;
         .container {
             max-width: 481px;
-
 
             .container_header {
                 flex-direction: column;
@@ -1267,7 +1266,7 @@ body {
                 flex-direction: column;
 
                 .aws_list {
-                    flex-direction: column;
+                    flex-wrap: wrap;
 
                     .list_row {
                         margin: 10px auto;
@@ -1328,7 +1327,7 @@ body {
                 flex-direction: column;
 
                 .aws_list {
-                    flex-direction: column;
+                    flex-wrap: wrap;
 
                     .list_row {
                         margin: 10px auto;
@@ -1354,8 +1353,7 @@ body {
         padding-right: 10px;
         padding-left: 10px;
         .container {
-            max-width: 360px;
-
+            max-width: 300px;
 
             .container_header {
                 flex-direction: column;
@@ -1370,7 +1368,7 @@ body {
                 flex-direction: column;
                 .image_iot {
                     img {
-                        max-width: 340px;
+                        max-width: 300px;
                     }
                 }
             }
@@ -1388,7 +1386,7 @@ body {
                 flex-direction: column;
 
                 .aws_list {
-                    flex-direction: column;
+                    flex-wrap: wrap;
 
                     .list_row {
                         margin: 10px auto;
