@@ -1607,7 +1607,7 @@ body {
   .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    max-width: 1170px;
   }
 }
 
@@ -1638,18 +1638,30 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .container {
+  .container_inner .container {
     max-width: 768px;
     margin-left: 10px;
     margin-right: 10px;
   }
-  .container .dstar_iot_wrapper {
+  .container_inner .container .container_header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .how_it_works_wrapper .how_it_content {
+  .container_inner .container .container_header nav .link_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .dstar_iot_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .how_it_works_wrapper .how_it_content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1658,93 +1670,162 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .aws_wrapper {
+  .container_inner .container .aws_wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .aws_wrapper .aws_list {
+  .container_inner .container .aws_wrapper .aws_list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .aws_wrapper .aws_list .list_row {
+  .container_inner .container .aws_wrapper .aws_list .list_row {
     margin: 10px auto;
+  }
+  .container_inner .container .all_com_wrapper .all_com_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .footer_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .container {
+  .container_inner .container {
     max-width: 481px;
     margin-left: auto;
     margin-right: auto;
   }
-  .container .container_header {
+  .container_inner .container .container_header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .dstar_iot_wrapper {
+  .container_inner .container .container_header nav .link_wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .how_it_works_wrapper .how_it_content {
+  .container_inner .container .dstar_iot_wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .aws_wrapper {
+  .container_inner .container .dstar_iot_wrapper .image_iot img {
+    max-width: 360px;
+  }
+  .container_inner .container .how_it_works_wrapper .how_it_content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .aws_wrapper .aws_list {
+  .container_inner .container .how_it_works_wrapper .how_it_content .mac {
+    max-width: 360px;
+  }
+  .container_inner .container .aws_wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .aws_wrapper .aws_list .list_row {
+  .container_inner .container .aws_wrapper .aws_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .aws_wrapper .aws_list .list_row {
     margin: 10px auto;
+  }
+  .container_inner .container .all_com_wrapper .all_com_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .all_com_wrapper .all_com_content .mac {
+    max-width: 360px;
+  }
+  .container_inner .container .footer_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
+  .container_inner .container {
     max-width: 480px;
   }
-  .container .dstar_iot_wrapper {
+  .container_inner .container .container_header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .how_it_works_wrapper .how_it_content {
+  .container_inner .container .container_header nav .link_wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .aws_wrapper {
+  .container_inner .container .dstar_iot_wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .aws_wrapper .aws_list {
+  .container_inner .container .dstar_iot_wrapper .image_iot img {
+    max-width: 360px;
+  }
+  .container_inner .container .how_it_works_wrapper .how_it_content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .aws_wrapper .aws_list .list_row {
+  .container_inner .container .how_it_works_wrapper .how_it_content .mac {
+    max-width: 360px;
+  }
+  .container_inner .container .aws_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .aws_wrapper .aws_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .aws_wrapper .aws_list .list_row {
     margin: 10px auto;
+  }
+  .container_inner .container .all_com_wrapper .all_com_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .footer_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
