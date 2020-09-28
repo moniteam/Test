@@ -1289,7 +1289,7 @@ body {
         }
     }
 }
-@media (max-width: 480px) {
+@media (min-width: 361px) and (max-width: 480px) {
     .container_inner {
         .container {
             max-width: 480px;
@@ -1317,6 +1317,63 @@ body {
                     flex-direction: column;
                     .mac {
                         max-width: 360px;
+                    }
+                }
+            }
+
+            .aws_wrapper {
+                flex-direction: column;
+
+                .aws_list {
+                    flex-direction: column;
+
+                    .list_row {
+                        margin: 10px auto;
+                    }
+                }
+            }
+
+            .all_com_wrapper {
+                .all_com_content {
+                    flex-direction: column;
+                }
+            }
+
+            .footer_content {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .container_inner {
+        .container {
+            max-width: 360px;
+
+            .container_header {
+                flex-direction: column;
+                nav {
+                    .link_wrapper {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .dstar_iot_wrapper {
+                flex-direction: column;
+                .image_iot {
+                    img {
+                        max-width: 340px;
+                    }
+                }
+            }
+
+            .how_it_works_wrapper {
+                .how_it_content {
+                    flex-direction: column;
+                    .mac {
+                        max-width: 340px;
                     }
                 }
             }

@@ -1767,7 +1767,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 361px) and (max-width: 480px) {
   .container_inner .container {
     max-width: 480px;
   }
@@ -1800,6 +1800,69 @@ body {
   }
   .container_inner .container .how_it_works_wrapper .how_it_content .mac {
     max-width: 360px;
+  }
+  .container_inner .container .aws_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .aws_wrapper .aws_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .aws_wrapper .aws_list .list_row {
+    margin: 10px auto;
+  }
+  .container_inner .container .all_com_wrapper .all_com_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .footer_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+  .container_inner .container {
+    max-width: 360px;
+  }
+  .container_inner .container .container_header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .container_header nav .link_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .dstar_iot_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .dstar_iot_wrapper .image_iot img {
+    max-width: 340px;
+  }
+  .container_inner .container .how_it_works_wrapper .how_it_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_inner .container .how_it_works_wrapper .how_it_content .mac {
+    max-width: 340px;
   }
   .container_inner .container .aws_wrapper {
     -webkit-box-orient: vertical;
