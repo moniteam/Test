@@ -1647,6 +1647,8 @@ body {
   }
   .container_inner .container {
     max-width: 758px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container_inner .container .container_header {
     -webkit-box-orient: vertical;
@@ -1718,6 +1720,8 @@ body {
   }
   .container_inner .container {
     max-width: 481px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container_inner .container .container_header {
     overflow: hidden;
@@ -1794,6 +1798,8 @@ body {
   }
   .container_inner .container {
     max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container_inner .container .container_header {
     -webkit-box-orient: vertical;
@@ -1879,6 +1885,8 @@ body {
   }
   .container_inner .container {
     max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container_inner .container .container_header {
     -webkit-box-orient: vertical;
