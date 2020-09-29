@@ -1241,9 +1241,9 @@ body {
         padding-right: 10px;
         padding-left: 10px;
         .container {
-            max-width: 481px;
-
+            max-width: 767px;
             .container_header {
+                overflow: hidden;
                 flex-direction: column;
                 nav {
                     .link_wrapper {
