@@ -1,4 +1,3 @@
-@import url(..//fonts/OpenSans-SemiBoldItalic.ttf);
 * {
   padding: 0;
   margin: 0;
@@ -1705,9 +1704,10 @@ body {
     padding-left: 10px;
   }
   .container_inner .container {
-    max-width: 481px;
+    max-width: 767px;
   }
   .container_inner .container .container_header {
+    overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
