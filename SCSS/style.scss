@@ -1327,6 +1327,19 @@ body {
                             }
                         }
                     }
+
+                    .slider_btns_wrapper {
+                        margin: 40px 15px 40px;
+
+                        .batton {
+                            font-size: 0;
+                            background-position: center;
+                        }
+                        .btn_get_result {
+                            background-image: url(..//img/icon/arrow_white_forward.svg);
+                            background-repeat: no-repeat;
+                        }
+                    }
                 }
             }
 
@@ -1398,6 +1411,7 @@ body {
             .participate_wrapper {
                 .slider {
                     .progress_bar {
+                        margin: 40px 20px 40px;
                         .slide_progress_mark {
                             &::after {
                                 content: "";
@@ -1417,6 +1431,19 @@ body {
                                     }
                                 }
                             }
+                        }
+                    }
+
+                    .slider_btns_wrapper {
+                        margin: 40px 15px 40px;
+
+                        .batton {
+                            font-size: 0;
+                            background-position: center;
+                        }
+                        .btn_get_result {
+                            background-image: url(..//img/icon/arrow_white_forward.svg);
+                            background-repeat: no-repeat;
                         }
                     }
                 }
@@ -1515,6 +1542,7 @@ body {
             .participate_wrapper {
                 .slider {
                     .progress_bar {
+                        margin: 40px 20px 40px;
                         .slide_progress_mark {
                             &::after {
                                 content: "";
@@ -1534,6 +1562,19 @@ body {
                                     }
                                 }
                             }
+                        }
+                    }
+
+                    .slider_btns_wrapper {
+                        margin: 40px 15px 40px;
+
+                        .batton {
+                            font-size: 0;
+                            background-position: center;
+                        }
+                        .btn_get_result {
+                            background-image: url(..//img/icon/arrow_white_forward.svg);
+                            background-repeat: no-repeat;
                         }
                     }
                 }
