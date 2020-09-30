@@ -1312,6 +1312,24 @@ body {
                 }
             }
 
+            .participate_wrapper {
+                .slider {
+                    .slides_wrapper {
+                        .form_wrapper,
+                        .form_wrapper_active {
+                            .form {
+                                .form_btns {
+                                    width: 90%;
+                                    .radio_btn {
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             .footer_content {
                 flex-direction: column;
             }
@@ -1374,6 +1392,33 @@ body {
             .all_com_wrapper {
                 .all_com_content {
                     flex-direction: column;
+                }
+            }
+
+            .participate_wrapper {
+                .slider {
+                    .progress_bar {
+                        .slide_progress_mark {
+                            &::after {
+                                content: "";
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .slides_wrapper {
+                        .form_wrapper,
+                        .form_wrapper_active {
+                            .form {
+                                .form_btns {
+                                    width: 90%;
+                                    .radio_btn {
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -1464,6 +1509,33 @@ body {
             .all_com_wrapper {
                 .all_com_content {
                     flex-direction: column;
+                }
+            }
+
+            .participate_wrapper {
+                .slider {
+                    .progress_bar {
+                        .slide_progress_mark {
+                            &::after {
+                                content: "";
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .slides_wrapper {
+                        .form_wrapper,
+                        .form_wrapper_active {
+                            .form {
+                                .form_btns {
+                                    width: 90%;
+                                    .radio_btn {
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
 

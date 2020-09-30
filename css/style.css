@@ -1783,6 +1783,14 @@ body {
   .container_inner .container .all_com_wrapper .all_com_content .mac {
     max-width: 360px;
   }
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper .form .form_btns,
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns {
+    width: 90%;
+  }
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper .form .form_btns .radio_btn,
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn {
+    height: auto;
+  }
   .container_inner .container .footer_content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1856,6 +1864,18 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .container_inner .container .participate_wrapper .slider .progress_bar .slide_progress_mark::after {
+    content: "";
+    display: none;
+  }
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper .form .form_btns,
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns {
+    width: 90%;
+  }
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper .form .form_btns .radio_btn,
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn {
+    height: auto;
   }
   .container_inner .container .footer_wrapper .footer_content {
     -webkit-box-orient: vertical;
@@ -1946,6 +1966,18 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .container_inner .container .participate_wrapper .slider .progress_bar .slide_progress_mark::after {
+    content: "";
+    display: none;
+  }
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper .form .form_btns,
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns {
+    width: 90%;
+  }
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper .form .form_btns .radio_btn,
+  .container_inner .container .participate_wrapper .slider .slides_wrapper .form_wrapper_active .form .form_btns .radio_btn {
+    height: auto;
   }
   .container_inner .container .footer_wrapper .footer_content {
     -webkit-box-orient: vertical;
