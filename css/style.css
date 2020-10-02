@@ -817,6 +817,10 @@ body {
   max-height: 635px;
 }
 
+.all_communication .container .all_com_wrapper .all_com_content_disabled {
+  display: none;
+}
+
 .participate {
   margin-top: 230px;
   background-image: url(..//img/participate_bckg/back_partic.jpg);

@@ -1,5 +1,17 @@
 $(document).ready(function () {
     //Tabs
+    if ($(window).width() < 992) {
+        $('.all_com_content').addClass('all_com_content_disabled');
+        $('.all_com_content_slick').removeClass('all_com_content_disabled');
+        $('.tabs_slick').slick({
+            arrows: false,
+            dots: true,
+        });
+    } else {
+        $('.all_com_content_slick').addClass('all_com_content_disabled');
+        $('.all_com_content').removeClass('all_com_content_disabled');
+    }
+
     $('.tab_trigger').click(function (e) {
         e.preventDefault();
 
