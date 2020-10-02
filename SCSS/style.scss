@@ -464,6 +464,9 @@ body {
                     max-width: 555px;
                 }
             }
+            .all_com_content_slick {
+                margin-top: 40px;
+            }
             .all_com_content {
                 display: flex;
                 justify-content: space-around;
@@ -574,7 +577,6 @@ body {
             .all_com_content_disabled {
                 display: none;
             }
-
         }
     }
 }

@@ -626,6 +626,10 @@ body {
   max-width: 555px;
 }
 
+.all_communication .container .all_com_wrapper .all_com_content_slick {
+  margin-top: 40px;
+}
+
 .all_communication .container .all_com_wrapper .all_com_content {
   display: -webkit-box;
   display: -ms-flexbox;

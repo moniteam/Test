@@ -77,11 +77,77 @@
     }
 }
 
+.slick-dots li {
+    &:nth-of-type(1) button {
+        background-image: url(..//img/tabs_1_trigger/audio_calls.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-of-type(2) button {
+        background-image: url(..//img/tabs_1_trigger/backup_and_restore.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-of-type(3) button {
+        background-image: url(..//img/tabs_1_trigger/cloud_storage.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-of-type(4) button {
+        background-image: url(..//img/tabs_1_trigger/email.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-of-type(5) button {
+        background-image: url(..//img/tabs_1_trigger/messenger.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-of-type(6) button {
+        background-image: url(..//img/tabs_1_trigger/video_calls.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
 .slick-dots li.slick-active button {
     background: #00abca;
     &:active,
     &:focus {
         outline: none;
+    }
+}
+
+.slick-dots li.slick-active {
+    &:nth-of-type(1) button {
+        background-image: url(..//img/tabs_1_trigger_active_white/audio_calls.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-of-type(2) button {
+        background-image: url(..//img/tabs_1_trigger_active_white/backup_and_restore.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-of-type(3) button {
+        background-image: url(..//img/tabs_1_trigger_active_white/cloud_storage.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-of-type(4) button {
+        background-image: url(..//img/tabs_1_trigger_active_white/email.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-of-type(5) button {
+        background-image: url(..//img/tabs_1_trigger_active_white/messenger.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &:nth-of-type(6) button {
+        background-image: url(..//img/tabs_1_trigger_active_white/video_calls.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 }
 
@@ -91,5 +157,26 @@
         max-width: 50%;
         max-height: 50%;
         text-align: center;
+    }
+    .name_col {
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-transform: capitalize;
+        color: #161616;
+        margin-bottom: 20px;
+    }
+    .description_col {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #667886;
     }
 }
